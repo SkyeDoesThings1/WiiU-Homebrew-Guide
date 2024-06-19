@@ -1,2 +1,2 @@
 # WiiU-Homebrew-Guide
-I made this at like 3:00am cause I was bored stuff might not work
+This is a small Homebrew guide I made for the Nintendo Wii U. It's no where near done so yeah.
