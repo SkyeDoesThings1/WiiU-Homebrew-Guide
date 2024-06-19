@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Wii U Modding Guide!</title>
+    <link rel='icon' type='image/x-icon' href='../src/favicon.ico'>
+    <link rel='stylesheet' href='../css/styles.css'>
+    <style>
+        #choices {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .choice h3 a {
+            color: inherit;
+        }
+
+        .pros-cons {
+            margin-top: 30px;
+        }
+
+        .pros-cons p {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        details summary {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .dropdown-content {
+            background-color: #4444445d;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        details[open] .dropdown-content {
+            max-height: 500px;
+        }
+
+        details .dropdown-content {
+            max-height: 0;
+        }
+
+        .red-warning {
+            border-left: 5px solid red;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar-container"></div>
+    <div class='content' id='content'>
+        <h1 id='guide'><a href='#Method-Choice'>Choose Your Homebrew Method!</a></h1>
+        <hr>
+        <blockquote class='blockquote'>
+            <p>You can install both Aroma and Tiramisu at the same time and swap between the two!</p>
+        </blockquote>
+
+        <div id='choices'>
+            <div id='aroma' class='choice'>
+                <h3>Aroma</h3>
+                <p>Pros:</p>
+                <ul>
+                    <li>Most up-to-date</li>
+                    <li>WHUB Support</li>
+                    <li>Pretendo Network</li>
+                </ul>
+                <p>Cons:</p>
+                <ul>
+                    <li>No legacy homebrew (.elf)</li>
+                    <li>No Homebrew Launcher Channel</li>
+                    <li>Still a work in progress/beta</li>
+                </ul>
+                <h3><a href='aroma/aroma.html'>Continue to Aroma!</a></h3>
+            </div>
+            <div id='tiramisu' class='choice'>
+                <h3>Tiramisu</h3>
+                <p>Pros:</p>
+                <ul>
+                    <li>Homebrew Launcher Channel</li>
+                    <li>Most homebrew</li>
+                    <li>Not in beta</li>
+                </ul>
+                <p>Cons:</p>
+                <ul>
+                    <li>No WHUBS</li>
+                    <li>Most homebrew has moved to Aroma</li>
+                </ul>
+                <h3><a href='tiramisu/tiramisu.html'>Continue to Tiramisu!</a></h3>
+            </div>
+        </div>
+        <details>
+            <summary>Legacy Methods</summary>
+            <div class='dropdown-content'>
+                <blockquote class='blockquote red-warning'>
+                    <p>These methods are no longer supported. Continue at your own risk!</p>
+                </blockquote>
+                <ul>
+                    <li><a href='../steps/legacy/haxchi/haxchi.html'>HaxChi</a></li>
+                    <li><a href='../steps/legacy/cbhc/cbhc.html'>ColdBoot HaxChi (CBHC)</a></li>
+                    <li><a href='../steps/legacy/mocha/mocha.html'>Mocha</a></li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <script src='../js/script.js'></script>
+</body>
+
+</html>

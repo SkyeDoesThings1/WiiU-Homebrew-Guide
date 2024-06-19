@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Wii U Modding Guide!</title>
+  <link rel='icon' type='image/x-icon' href='../../src/favicon.ico'>
+  <link rel='stylesheet' href='../../css/styles.css'>
+  <style>
+    #choices {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .choice {
+      width: 45%;
+      position: relative;
+      text-align: center;
+      margin-bottom: 30px;
+      background-color: #444;
+      padding: 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .choice h3 {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #282A2F;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .choice h3 a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .choice:hover {
+      background-color: #555;
+    }
+
+    .pros-cons {
+      margin-top: 30px;
+    }
+
+    .pros-cons p {
+      margin: 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sidebar-container"></div>
+  <div class='content' id='content'>
+    <h1>Aroma Install Guide</h1>
+    <hr />
+    <blockquote class='blockquote'>
+      <p>Follow this guide carefully to install the Aroma homebrew environment on your Wii U.</p>
+    </blockquote>
+  </div>
+  <script src='../../js/script.js'></script>
+</body>
+
+</html>
