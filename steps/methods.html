@@ -116,7 +116,20 @@
             </div>
         </details>
     </div>
-    <script src='../js/script.js'></script>
+    <script src="../js/script.js">
+        function loadSidebar() {
+            fetch('sidebar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('sidebar-container').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error loading sidebar:', error);
+                });
+        }
+
+        document.addEventListener('DOMContentLoaded', loadSidebar);
+    </script>
 </body>
 
 </html>
